@@ -1,5 +1,7 @@
 #!/bin/sh
 
+sed -i "s/xx_log_server_xx/${LOG_SERVER}/g" /etc/rsyslog.conf
+
 postconf -e myhostname=$POST_HOST
 
 echo "$POST_EMAIL	curl_email" >> /etc/postfix/redirect
