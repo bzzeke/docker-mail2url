@@ -20,4 +20,4 @@ mailbox_size_limit = 0
 recipient_delimiter = +
 inet_interfaces = all
 virtual_alias_maps = hash:/etc/postfix/redirect
-export_environment = POST_URL POST_EMAIL POST_HOST
+export_environment = POST_URL POST_EMAIL ROOT_SERVER_NAME
